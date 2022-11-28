@@ -9,9 +9,7 @@ initializeApp({
 
 const db = getFirestore();
 
-const {bikes} = require('./bikes.js');
-
-console.log(bikes);
+const { bikes } = require('./bikes.js');
 
 function initData() {
   for (const bike of bikes) {
@@ -20,6 +18,25 @@ function initData() {
   }
 }
 
-initData();
+async function getBikesAtLocation(location) {
+  const snapshot = await db.collection('Bikes').where('location', '==', location).get();
+  snapshot.forEach((doc) => {
+    console.log(doc.id, '=>', doc.data());
+  });
+}
+
+async function readData() {
+  const snapshot = await db.collection('Bikes').get();
+  snapshot.forEach((doc) => {
+    console.log(doc.id, '=>', doc.data());
+  });
+
+}
+
+//initData();
+
+//readData();
+
+getBikesAtLocation('Shrek');
 
 
