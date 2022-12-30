@@ -106,8 +106,8 @@ const bikes = [
                   fork: '',
                   location: 'Shrek',
                   status: 'Storage',
-                  size: '',
-                  wheelSize: '',
+                  size: 'S',
+                  wheelSize: '27.5',
                   notes: 'Replace the drivetrain with 1x from 007'
                 },
                 {
