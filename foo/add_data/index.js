@@ -33,10 +33,19 @@ async function readData() {
 
 }
 
+async function updateData(bike) {
+  const { infernoID, ...rest } = bike;
+  const res = await db.collection('Bikes').doc('000001').update({
+    status: 'Out',
+    location: 'Ryan',
+    lastUpdated: FieldValue.serverTimestamp()
+  });
+}
+
 //initData();
 
-//readData();
+readData();
 
-getBikesAtLocation('Shrek');
+//getBikesAtLocation('Shrek');
 
 

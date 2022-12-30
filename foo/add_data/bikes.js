@@ -8,20 +8,24 @@ const bikes = [
                   drivetrain:'3x',
                   fork: '',
                   location: 'Ryan',
+                  status: 'Storage',
                   size: 'S',
-                  wheelSize: ''
+                  wheelSize: '',
+                  notes: 'New rear tire, cut bars, pedals, tune up'
                 },
                 {
                   infernoID: '000002',
-                  manufacturer: '',
+                  manufacturer: 'Specialized',
                   model: '',
                   serialNumber: '',
-                  color: '',
+                  color: 'Black/Orange',
                   drivetrain:'',
                   fork: '',
-                  location: '',
+                  location: 'Ryan',
+                  status: 'Storage',
                   size: '',
-                  wheelSize: ''
+                  wheelSize: '',
+                  notes: 'Forks off Andy'
                 },
                 {
                   infernoID: '000003',
@@ -31,9 +35,11 @@ const bikes = [
                   color: 'Black/Green',
                   drivetrain:'1x',
                   fork: 'Suntour SR XC',
-                  location: 'Shrek',
+                  location: 'Matt',
+                  status: 'Storage',
                   size: 'M',
-                  wheelSize: '29'
+                  wheelSize: '29',
+                  notes: 'Change stem and pedals'
                 },
                 {
                   infernoID: '000004',
@@ -44,18 +50,21 @@ const bikes = [
                   drivetrain:'',
                   fork: '',
                   location: '',
+                  status: 'Storage',
                   size: '',
                   wheelSize: ''
                 },
                 {
                   infernoID: '000005',
-                  manufacturer: '',
-                  model: '',
+                  manufacturer: 'Specialized',
+                  model: 'Rockhopper',
                   serialNumber: '',
+                  frameSerialNumber: 'WSBxx0111',
                   color: '',
                   drivetrain:'',
                   fork: '',
-                  location: '',
+                  location: 'Shrek',
+                  status: 'Storage',
                   size: '',
                   wheelSize: ''
                 },
@@ -68,18 +77,20 @@ const bikes = [
                   drivetrain:'2x',
                   fork: '',
                   location: '',
+                  status: 'Storage',
                   size: 'M',
                   wheelSize: '29'
                 },
                 {
                   infernoID: '000007',
                   manufacturer: 'Trek',
-                  model: 'Marlin',
-                  serialNumber: '',
-                  color: 'Black',
-                  drivetrain:'',
+                  model: 'Marlin 6',
+                  serialNumber: 'WTU013C0265N',
+                  color: 'Black/Silver',
+                  drivetrain:'1x9',
                   fork: '',
                   location: 'Shrek',
+                  status: 'Storage',
                   size: '',
                   wheelSize: '',
                   notes: 'Wolftooth to move to Giant Talon 008'
@@ -89,23 +100,27 @@ const bikes = [
                   manufacturer: 'Giant',
                   model: 'Talon',
                   serialNumber: 'C1CD4146',
+                  frameSerialNumber: 'K6EK12802',
                   color: 'Black/Green',
                   drivetrain:'3x',
                   fork: '',
                   location: 'Shrek',
+                  status: 'Storage',
                   size: '',
                   wheelSize: '',
-                  notes: 'Replace the drivetrain with 007'
+                  notes: 'Replace the drivetrain with 1x from 007'
                 },
                 {
                   infernoID: '000009',
                   manufacturer: 'Trek',
                   model: 'Marlin',
                   serialNumber: 'WTU360C1030M',
+                  frameSerialNumber: '2039U0315',
                   color: 'Silver',
                   drivetrain:'1x',
                   fork: '',
                   location: 'Shrek',
+                  status: 'Storage',
                   size: 'S',
                   wheelSize: ''
                 },
@@ -118,6 +133,7 @@ const bikes = [
                   drivetrain:'',
                   fork: '',
                   location: '',
+                  status: 'Storage',
                   size: '',
                   wheelSize: ''
                 },
@@ -130,6 +146,7 @@ const bikes = [
                   drivetrain:'',
                   fork: '',
                   location: '',
+                  status: 'Storage',
                   size: 'S',
                   wheelSize: ''
                 },
@@ -142,6 +159,7 @@ const bikes = [
                   drivetrain:'',
                   fork: '',
                   location: 'Ryan',
+                  status: 'Storage',
                   size: 'S',
                   wheelSize: ''
                 },
@@ -154,6 +172,7 @@ const bikes = [
                   drivetrain:'',
                   fork: '',
                   location: '',
+                  status: 'Storage',
                   size: '',
                   wheelSize: ''
                 },
@@ -166,6 +185,7 @@ const bikes = [
                   drivetrain:'',
                   fork: '',
                   location: '',
+                  status: 'Storage',
                   size: '',
                   wheelSize: ''
                 },
@@ -178,6 +198,7 @@ const bikes = [
                   drivetrain:'',
                   fork: '',
                   location: '',
+                  status: 'Storage',
                   size: '',
                   wheelSize: ''
                 },
@@ -190,6 +211,7 @@ const bikes = [
                   drivetrain:'',
                   fork: '',
                   location: '',
+                  status: 'Storage',
                   size: '',
                   wheelSize: ''
                 },
