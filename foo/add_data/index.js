@@ -11,6 +11,9 @@ const db = getFirestore();
 
 const { bikes } = require('./bikes.js');
 
+/**
+ * Initialize the data
+ */
 function initData() {
   for (const bike of bikes) {
     // Add a new document in collection "cities" with ID 'LA'
@@ -18,6 +21,10 @@ function initData() {
   }
 }
 
+/**
+ * Get the bikes at a given location
+ * @param {} location 
+ */
 async function getBikesAtLocation(location) {
   const snapshot = await db.collection('Bikes').where('location', '==', location).get();
   snapshot.forEach((doc) => {
@@ -25,6 +32,9 @@ async function getBikesAtLocation(location) {
   });
 }
 
+/**
+ * Read the data from the Firestore
+ */
 async function readData() {
   const snapshot = await db.collection('Bikes').get();
   snapshot.forEach((doc) => {
@@ -33,6 +43,10 @@ async function readData() {
 
 }
 
+/**
+ * Update the data
+ * @param {*} bike 
+ */
 async function updateData(bike) {
   const { infernoID, ...rest } = bike;
   const res = await db.collection('Bikes').doc('000001').update({
@@ -42,7 +56,7 @@ async function updateData(bike) {
   });
 }
 
-//initData();
+initData();
 
 readData();
 
