@@ -11,7 +11,7 @@ const bikes = [
                   status: 'Storage',
                   size: 'S',
                   wheelSize: '',
-                  notes: 'New rear tire, cut bars, pedals, tune up'
+                  notes: ['New rear tire, cut bars, pedals, tune up']
                 },
                 {
                   infernoID: '000002',
@@ -25,7 +25,7 @@ const bikes = [
                   status: 'Storage',
                   size: '',
                   wheelSize: '',
-                  notes: 'Forks off Andy'
+                  notes: ['Forks off Andy']
                 },
                 {
                   infernoID: '000003',
@@ -39,7 +39,7 @@ const bikes = [
                   status: 'Storage',
                   size: 'M',
                   wheelSize: '29',
-                  notes: 'Change stem and pedals'
+                  notes: ['Change stem and pedals']
                 },
                 {
                   infernoID: '000004',
@@ -93,7 +93,7 @@ const bikes = [
                   status: 'Storage',
                   size: '',
                   wheelSize: '',
-                  notes: 'Wolftooth to move to Giant Talon 008'
+                  notes: ['Wolftooth to move to Giant Talon 008']
                 },
                 {
                   infernoID: '000008',
@@ -108,7 +108,7 @@ const bikes = [
                   status: 'Storage',
                   size: '',
                   wheelSize: '',
-                  notes: 'Replace the drivetrain with 1x from 007'
+                  notes: ['Replace the drivetrain with 1x from 007']
                 },
                 {
                   infernoID: '000009',
