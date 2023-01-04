@@ -1,3 +1,4 @@
+[home](https://github.com/jastill/InfernoInventory)
 # InfernoInventory
 Inventory App for Inferno MTB
 

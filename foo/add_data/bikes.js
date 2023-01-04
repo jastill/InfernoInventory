@@ -93,7 +93,8 @@ const bikes = [
     status: 'Storage',
     size: '',
     wheelSize: '',
-    notes:[{timestamp:'2022-12-31',note:'Wolftooth to move to Giant Talon 008'}]
+    notes:[{timestamp:'2022-12-31',note:'Moved drivetrain to Giant Talon 008. No drivetrain, bent front brake lever. Suspension not locking out.'},
+      {timestamp:'2022-12-31',note:'Wolftooth to move to Giant Talon 008'}]
   },
   {
     infernoID: '000008',

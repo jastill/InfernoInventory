@@ -26,6 +26,7 @@ function initData() {
  * @param {} location 
  */
 async function getBikesAtLocation(location) {
+  console.log('location: ', location);
   const snapshot = await db.collection('Bikes').where('location', '==', location).get();
   snapshot.forEach((doc) => {
     console.log(doc.id, '=>', doc.data());
@@ -56,10 +57,20 @@ async function updateData(bike) {
   });
 }
 
-initData();
+const args = process.argv.slice(2);
+console.log('args: ', args);
 
-readData();
+switch (args[0]) {
+  case 'init':
+    initData();
+    break;
 
-//getBikesAtLocation('Shrek');
+  case 'read':  
+    readData();
+    break;
 
-
+  case 'location':
+    const location = args[1];
+    getBikesAtLocation(location);
+    break;
+}
